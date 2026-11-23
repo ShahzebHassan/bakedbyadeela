@@ -27,3 +27,11 @@
 @media(min-width:1181px) and (max-width:1300px){.nav{gap:14px}.nav>a:not(.nav-contact){font-size:17px}}
 @media(max-width:1180px){.nav>a:not(.nav-contact){font-size:23px}}
 @media(max-width:700px){.nav{grid-template-columns:1fr}.nav>a:not(.nav-contact){font-size:22px;padding:11px 0}}
+
+/* Instagram sits beside the enquiry action, and remains visible on phones. */
+.header-instagram{display:none}
+.nav>.nav-instagram{display:inline-flex;align-items:center;justify-content:center;width:36px;min-height:44px;padding:0;flex-shrink:0}
+.nav-instagram svg,.header-instagram svg{display:block;width:21px;height:21px}
+.nav>.nav-instagram:hover,.header-instagram:hover{color:var(--rose)}
+@media(max-width:1180px){.nav>.nav-instagram{display:none}.header-instagram{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:36px;min-height:44px;margin-left:auto}.header-inner{gap:16px}}
+@media(max-width:700px){.header-inner{gap:8px}.menu-toggle{width:36px;min-width:36px;min-height:44px;padding:5px;gap:0}.menu-toggle span{display:none}}

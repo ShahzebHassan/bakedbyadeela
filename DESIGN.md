@@ -97,7 +97,7 @@ Ivory (`ivory`) is the page canvas and image-caption surface. Warm paper (`paper
 **Display Font:** Cormorant Garamond with Georgia and serif fallbacks.
 **Body Font:** DM Sans with Arial and sans-serif fallbacks. Both families are served locally.
 
-Display and headline roles use light-looking regular serif forms; italic emphasis uses rose. Body text uses an open sans serif. The home headline has its own responsive range (43Ã¢â‚¬â€œ66px), becoming 43px on mobile and 38px below 400px. Standard third-level headings are 33px; mobile body copy is 14px. Action labels are uppercase with generous tracking. Navigation uses semibold serif text.
+Display and headline roles use light-looking regular serif forms; italic emphasis uses rose. Body text uses an open sans serif. The home headline has its own responsive range (43ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“66px), becoming 43px on mobile and 38px below 400px. Standard third-level headings are 33px; mobile body copy is 14px. Action labels are uppercase with generous tracking. Navigation uses semibold serif text.
 
 ## Layout
 
@@ -149,7 +149,10 @@ Ivory caption strips sit near the lower edge of each image with small diagonal a
 Implementation handoff: reviewer disposition **ship**. Desktop/mobile evidence is in `../review-redesign/`. Netlify Forms activation, a verified submission and notification setup remain operational steps in README; authorised Instagram activation is optional and pending.
 
 ### Header wordmark refinement
-The header uses an inline SVG typographic wordmark: larger italic B and A initials, fine Cormorant Garamond capitals, smaller italic by, two fine flourishes and a small five-petal flower. It retains an accessible text label and remains single-line. Ink is the rose token. Desktop width is 350px, 300px at 1181â€“1300px, and clamp(190px,60vw,280px) on phones. The footer retains the established stacked signature. The vector lettering inherits the locally hosted font and scales cleanly.
+The header uses an inline SVG typographic wordmark: larger italic B and A initials, fine Cormorant Garamond capitals, smaller italic by, two fine flourishes and a small five-petal flower. It retains an accessible text label and remains single-line. Ink is the rose token. Desktop width is 350px, 300px at 1181Ã¢â‚¬â€œ1300px, and clamp(190px,60vw,280px) on phones. The footer retains the established stacked signature. The vector lettering inherits the locally hosted font and scales cleanly.
 
 ### Navigation emphasis
 Main navigation links use 19px bold (700) serif lettering; compact desktops use 17px, tablet menus 23px and phone menus 22px. Phone menus use one column for legibility. Enquiry button styling is unchanged.
+
+### Header Instagram link
+A 21px outlined Instagram SVG links to @bakedbyadeela beside the desktop enquiry action. At 1180px and below it stays visible beside the menu toggle; its duplicate inside the collapsed navigation is hidden. Accessible labels describe its destination and new tab behaviour.
