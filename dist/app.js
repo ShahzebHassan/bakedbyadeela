@@ -4,7 +4,7 @@ function closeMenu(){nav?.classList.remove('open');menuButton?.setAttribute('ari
 menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');nav.classList.toggle('open',open)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){closeMenu();menuButton.focus()}});
 document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeMenu()});
-matchMedia('(min-width:1021px)').addEventListener('change',e=>{if(e.matches)closeMenu()});
+matchMedia('(min-width:1181px)').addEventListener('change',e=>{if(e.matches)closeMenu()});
 document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));let count=0;document.querySelectorAll('.flavour').forEach(item=>{item.hidden=button.dataset.filter!=='all'&&item.dataset.category!==button.dataset.filter;if(!item.hidden)count++});document.querySelector('#filter-status').textContent=`${count} flavour ideas shown`;}));
 const form=document.querySelector('#enquiry-form');
 if(form){

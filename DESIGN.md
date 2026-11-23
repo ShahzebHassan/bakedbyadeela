@@ -97,13 +97,13 @@ Ivory (`ivory`) is the page canvas and image-caption surface. Warm paper (`paper
 **Display Font:** Cormorant Garamond with Georgia and serif fallbacks.
 **Body Font:** DM Sans with Arial and sans-serif fallbacks. Both families are served locally.
 
-Display and headline roles use light-looking regular serif forms; italic emphasis uses rose. Body text uses an open sans serif. The home headline has its own responsive range (43–66px), becoming 43px on mobile and 38px below 400px. Standard third-level headings are 33px; mobile body copy is 14px. Action labels are uppercase with generous tracking. Navigation uses semibold serif text.
+Display and headline roles use light-looking regular serif forms; italic emphasis uses rose. Body text uses an open sans serif. The home headline has its own responsive range (43â€“66px), becoming 43px on mobile and 38px below 400px. Standard third-level headings are 33px; mobile body copy is 14px. Action labels are uppercase with generous tracking. Navigation uses semibold serif text.
 
 ## Layout
 
-The general container is capped at 1340px, with desktop gutters from the frontmatter, 36px gutters below 1180px and mobile gutters below 700px. Sections reduce from 80px to 65px below 1020px and 48px below 700px.
+The general container is capped at 1340px, with desktop gutters from the frontmatter, 36px gutters below 1180px and mobile gutters below 700px. Sections reduce from 80px to 65px below 1180px and 48px below 700px.
 
-The masthead is 126px minimum on desktop, 106px below 1020px and 100px below 700px. The opening gallery uses three columns (1:1.13:1); mobile displays two images and hides the central wedding image. Weddings remain available through navigation and the collections section. Collection, journey and journal grids become single columns below 700px; Instagram changes from four columns to two. The form stays two columns until 400px. Product grids accommodate one, two or three items.
+The masthead is 126px minimum on desktop, 106px below 1180px and 100px below 700px. The opening gallery uses three columns (1:1.13:1); mobile displays two images and hides the central wedding image. Weddings remain available through navigation and the collections section. Collection, journey and journal grids become single columns below 700px; Instagram changes from four columns to two. The form stays two columns until 400px. Product grids accommodate one, two or three items.
 
 ## Elevation & Depth
 
@@ -128,7 +128,7 @@ Collections and products are unboxed image-and-caption compositions. Captions us
 Paper fields have square corners, a muted rose-grey outline (`#ac9699`), 49px minimum height and explicit labels. Textareas are 160px tall and vertically resizable. Native constraints handle required values. Submission status appears below the button; errors receive a blush panel and retain input. Form integration activation is documented in README.
 
 ### Navigation
-The BAKED by / Adeela wordmark is text, with an italic surname and no circular logo. Serif links underline on hover/current-page state. Below 1020px a menu control opens a two-column panel with a full-width enquiry action. Keyboard/Escape support and the skip link are part of the implementation.
+The header uses a single-line BAKED by ADEELA text wordmark with a smaller italic by and no circular logo. The footer retains the stacked signature. Serif links underline on hover/current-page state. Below 1180px a menu control opens a two-column panel with a full-width enquiry action. Keyboard/Escape support and the skip link are part of the implementation.
 
 ### Photographic opening
 Ivory caption strips sit near the lower edge of each image with small diagonal arrows. Image hover scales to 1.025 over 800ms. The linked Instagram portfolio uses a 400ms scale to 1.04 and remains truthful about its static content until an authorised backend supplies media. Reduced-motion preference disables transitions and animations and restores ordinary scrolling.
@@ -147,3 +147,6 @@ Ivory caption strips sit near the lower edge of each image with small diagonal a
 - Don't describe the static Instagram portfolio as a connected live feed.
 
 Implementation handoff: reviewer disposition **ship**. Desktop/mobile evidence is in `../review-redesign/`. Netlify Forms activation, a verified submission and notification setup remain operational steps in README; authorised Instagram activation is optional and pending.
+
+### Header wordmark refinement
+The header uses a single-line `BAKED by ADEELA` wordmark in Cormorant Garamond: uppercase outer words at 42px, a smaller italic by at .71em, baseline alignment and 10px gaps. At 1181â€“1300px it uses 36px and 8px gaps; phones use clamp(23px,6.9vw,34px) and 7px gaps. Navigation collapses at 1180px to preserve room for the full name. The footer retains the stacked signature.
