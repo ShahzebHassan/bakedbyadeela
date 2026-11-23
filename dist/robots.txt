@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bakedbyadeela.netlify.app/sitemap.xml

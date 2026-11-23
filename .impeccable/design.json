@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T09:36:05.429695+00:00",
+  "title": "Design System: Baked By Adeela",
+  "extensions": {
+    "colorMeta": {
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Ivory",
+        "tonalRamp": [
+          "oklch(15% 0.0086 84.57)",
+          "oklch(26% 0.0086 84.57)",
+          "oklch(38% 0.0086 84.57)",
+          "oklch(49% 0.0086 84.57)",
+          "oklch(61% 0.0086 84.57)",
+          "oklch(72% 0.0086 84.57)",
+          "oklch(84% 0.0086 84.57)",
+          "oklch(95% 0.0086 84.57)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0057 84.57)",
+          "oklch(26% 0.0057 84.57)",
+          "oklch(38% 0.0057 84.57)",
+          "oklch(49% 0.0057 84.57)",
+          "oklch(61% 0.0057 84.57)",
+          "oklch(72% 0.0057 84.57)",
+          "oklch(84% 0.0057 84.57)",
+          "oklch(95% 0.0057 84.57)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0186 7.61)",
+          "oklch(26% 0.0186 7.61)",
+          "oklch(38% 0.0186 7.61)",
+          "oklch(49% 0.0186 7.61)",
+          "oklch(61% 0.0186 7.61)",
+          "oklch(72% 0.0186 7.61)",
+          "oklch(84% 0.0186 7.61)",
+          "oklch(95% 0.0186 7.61)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0239 10.48)",
+          "oklch(26% 0.0239 10.48)",
+          "oklch(38% 0.0239 10.48)",
+          "oklch(49% 0.0239 10.48)",
+          "oklch(61% 0.0239 10.48)",
+          "oklch(72% 0.0239 10.48)",
+          "oklch(84% 0.0239 10.48)",
+          "oklch(95% 0.0239 10.48)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "pink": {
+        "role": "primary",
+        "displayName": "Blush",
+        "tonalRamp": [
+          "oklch(15% 0.0234 14.30)",
+          "oklch(26% 0.0234 14.30)",
+          "oklch(38% 0.0234 14.30)",
+          "oklch(49% 0.0234 14.30)",
+          "oklch(61% 0.0234 14.30)",
+          "oklch(72% 0.0234 14.30)",
+          "oklch(84% 0.0234 14.30)",
+          "oklch(95% 0.0234 14.30)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "rose": {
+        "role": "primary",
+        "displayName": "Muted Rose",
+        "tonalRamp": [
+          "oklch(15% 0.0529 2.04)",
+          "oklch(26% 0.0529 2.04)",
+          "oklch(38% 0.0529 2.04)",
+          "oklch(49% 0.0529 2.04)",
+          "oklch(61% 0.0529 2.04)",
+          "oklch(72% 0.0529 2.04)",
+          "oklch(84% 0.0529 2.04)",
+          "oklch(95% 0.0529 2.04)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "lilac": {
+        "role": "secondary",
+        "displayName": "Lilac",
+        "tonalRamp": [
+          "oklch(15% 0.0170 316.93)",
+          "oklch(26% 0.0170 316.93)",
+          "oklch(38% 0.0170 316.93)",
+          "oklch(49% 0.0170 316.93)",
+          "oklch(61% 0.0170 316.93)",
+          "oklch(72% 0.0170 316.93)",
+          "oklch(84% 0.0170 316.93)",
+          "oklch(95% 0.0170 316.93)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Sage",
+        "tonalRamp": [
+          "oklch(15% 0.0153 123.06)",
+          "oklch(26% 0.0153 123.06)",
+          "oklch(38% 0.0153 123.06)",
+          "oklch(49% 0.0153 123.06)",
+          "oklch(61% 0.0153 123.06)",
+          "oklch(72% 0.0153 123.06)",
+          "oklch(84% 0.0153 123.06)",
+          "oklch(95% 0.0153 123.06)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Soft Rule",
+        "tonalRamp": [
+          "oklch(15% 0.0167 36.52)",
+          "oklch(26% 0.0167 36.52)",
+          "oklch(38% 0.0167 36.52)",
+          "oklch(49% 0.0167 36.52)",
+          "oklch(61% 0.0167 36.52)",
+          "oklch(72% 0.0167 36.52)",
+          "oklch(84% 0.0167 36.52)",
+          "oklch(95% 0.0167 36.52)"
+        ],
+        "rampPurpose": "Synthesized display ramp; not implemented CSS tokens."
+      }
+    },
+    "shadows": [
+      {
+        "name": "mobile-menu",
+        "value": "0 15px 20px #473a3c12",
+        "purpose": "Expanded menu separation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "portfolio-hover",
+        "value": "transform .65s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Collection/product image scale to 1.025."
+      },
+      {
+        "name": "hero-hover",
+        "value": "transform .8s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Opening image scale to 1.025."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Disable animations and transitions when requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "small-mobile",
+        "value": "400px"
+      },
+      {
+        "name": "mobile",
+        "value": "700px"
+      },
+      {
+        "name": "menu",
+        "value": "1020px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1180px"
+      },
+      {
+        "name": "wide",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Enquiry action with a square outline.",
+      "html": "<a class=\"ds-button-primary\" href=\"#enquiry\">Enquire about your occasion</a>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:24px;border:1px solid var(--rose,#76505a);padding:14px 25px;min-height:50px;font:11px var(--sans,Arial,sans-serif);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s;background:var(--rose,#76505a);color:var(--paper,#fffdf9);}.ds-button-primary:hover{background:var(--ink,#473a3c);border-color:var(--ink,#473a3c)}.ds-button-primary:focus-visible{outline:2px solid var(--rose,#76505a);outline-offset:6px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Enquiry action with a square outline.",
+      "html": "<a class=\"ds-button-secondary\" href=\"#enquiry\">Enquire about your occasion</a>",
+      "css": ".ds-button-secondary{display:inline-flex;align-items:center;justify-content:center;gap:24px;border:1px solid var(--rose,#76505a);padding:14px 25px;min-height:50px;font:11px var(--sans,Arial,sans-serif);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:background .2s,color .2s;background:transparent;color:var(--ink,#473a3c);}.ds-button-secondary:hover{background:var(--ink,#473a3c);border-color:var(--ink,#473a3c)}.ds-button-secondary:focus-visible{outline:2px solid var(--rose,#76505a);outline-offset:6px}"
+    },
+    {
+      "name": "Enquiry Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Explicit label with a paper field.",
+      "html": "<label class=\"ds-field\">Your name *<input required autocomplete=\"name\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;color:var(--ink,#473a3c);font:12px var(--sans,Arial,sans-serif)}.ds-field input{border:1px solid #ac9699;background:var(--paper,#fffdf9);color:var(--ink,#473a3c);padding:12px;min-height:49px;border-radius:0;font:15px var(--sans,Arial,sans-serif)}.ds-field input:focus-visible{outline:2px solid var(--rose,#76505a);outline-offset:6px}"
+    },
+    {
+      "name": "Collection Filter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Pressed state identifies the selected collection.",
+      "html": "<button class=\"ds-filter\" aria-pressed=\"true\">All designs</button>",
+      "css": ".ds-filter{padding:10px 20px;border:1px solid var(--line,#d5c7c3);color:var(--ink,#473a3c);background:transparent;font:12px var(--sans,Arial,sans-serif)}.ds-filter[aria-pressed=true],.ds-filter:hover{background:var(--rose,#76505a);color:var(--paper,#fffdf9);border-color:var(--rose,#76505a)}.ds-filter:focus-visible{outline:2px solid var(--rose,#76505a);outline-offset:6px}"
+    },
+    {
+      "name": "Masthead Navigation",
+      "kind": "nav",
+      "refersTo": "masthead",
+      "description": "Text identity and serif navigation on blush.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Example\"><a class=\"ds-brand\" href=\"#home\">BAKED by<br><i>Adeela</i></a><a href=\"#weddings\">Weddings</a><a href=\"#bouquets\">Cupcake bouquets</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;align-items:center;gap:27px;background:var(--pink,#e9d4d5);padding:16px 4%;min-height:126px;color:var(--ink,#473a3c)}.ds-nav a{font:600 15px var(--serif,Georgia,serif);color:inherit;text-decoration:none}.ds-nav .ds-brand{font-size:23px;font-weight:400;line-height:1}.ds-brand i{font-size:67px}.ds-nav a:hover{color:var(--rose,#76505a);text-decoration:underline;text-underline-offset:7px}.ds-nav a:focus-visible{outline:2px solid var(--rose,#76505a);outline-offset:6px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The floral cake studio",
+    "overview": "Original client photographs carry the identity, supported by soft pastel fields and expressive serif typography. The approved Olive & Mac reference informs the wide blush masthead and restrained editorial presentation; the website uses the text Baked By Adeela wordmark.\n\nThe system is spacious and mostly flat. Quiet controls and warm ink let the details of hand-piped flowers remain the focus. This document records the implementation in `dist/style.css` and `build.py`; the composition contract remains in `DIRECTION.md`.",
+    "keyCharacteristics": [
+      "Original photography and a typographic brand.",
+      "Blush, lilac, sage and ivory surfaces.",
+      "Serif headings, square imagery and fine rules."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve original cake details and client photography.",
+      "Do use the text Baked By Adeela wordmark on the website.",
+      "Do retain visible keyboard focus and reduced-motion support.",
+      "Do send enquiry actions to the single enquiry page."
+    ],
+    "donts": [
+      "Don't replace the wide blush masthead with a circular-logo header.",
+      "Don't add raised app-style shells around portfolio items.",
+      "Don't describe the static Instagram portfolio as a connected live feed."
+    ]
+  }
+}
