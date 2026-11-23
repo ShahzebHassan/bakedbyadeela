@@ -15,8 +15,9 @@
 @media(max-width:400px){.hero-gallery>a{height:340px}.hero-gallery>a>span{font-size:16px;padding:10px 7px}.hero-gallery .arrow{display:none}.home-intro h1{font-size:38px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.product-caption{font-size:25px}.nav{padding-left:23px;padding-right:23px}.nav>a{font-size:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 
-/* Single-line editorial header wordmark; the footer keeps its established signature. */
-.site-header .wordmark{width:auto;flex-direction:row;align-items:baseline;gap:10px;white-space:nowrap;font-family:var(--serif);font-size:42px;font-weight:400;line-height:1.1;letter-spacing:-.025em}
-.site-header .wordmark i{font-size:.71em;font-weight:400;letter-spacing:-.015em;margin:0 1px}
-@media(min-width:1181px) and (max-width:1300px){.site-header .wordmark{font-size:36px;gap:8px}.header-inner{gap:24px}.nav{gap:17px}}
-@media(max-width:700px){.site-header .wordmark{font-size:clamp(23px,6.9vw,34px);gap:7px}.header-inner{gap:15px}}
+/* Bespoke single-line botanical wordmark with fine serif initials and flourishes. */
+.site-header .wordmark{display:block;width:350px;height:auto;flex-shrink:0;color:var(--rose);line-height:0}
+.wordmark-art{display:block;width:100%;height:auto;overflow:visible}
+.wordmark-lettering{font-family:var(--serif);font-weight:400}
+@media(min-width:1181px) and (max-width:1300px){.site-header .wordmark{width:300px}.header-inner{gap:24px}.nav{gap:17px}}
+@media(max-width:700px){.site-header .wordmark{width:clamp(190px,60vw,280px)}.header-inner{gap:15px}}
