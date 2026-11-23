@@ -47,3 +47,28 @@ if(feed){
   }
   const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){observer.disconnect();loadInstagram()}},{rootMargin:'200px'});observer.observe(feed);
 }
+
+
+// A single gentle entrance; content remains visible without JavaScript.
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
+if(!motionPreference.matches && 'IntersectionObserver' in window){
+  const revealObserver=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting)return;
+      entry.target.classList.add('portfolio-arrive');
+      revealObserver.unobserve(entry.target);
+    });
+  },{threshold:.08});
+  document.querySelectorAll('.product-gallery, .collections, .instagram-grid, .journey').forEach(group=>{
+    [...group.children].forEach((item,index)=>{
+      item.style.setProperty('--reveal-delay',Math.min(index,3)*70+'ms');
+      revealObserver.observe(item);
+    });
+  });
+  motionPreference.addEventListener('change',event=>{
+    if(event.matches){
+      revealObserver.disconnect();
+      document.querySelectorAll('.portfolio-arrive').forEach(item=>item.classList.remove('portfolio-arrive'));
+    }
+  });
+}

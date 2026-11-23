@@ -12,3 +12,15 @@ The following original JPEGs were supplied by the user in this conversation and 
 The Olive & Mac screenshot is layout reference only. No competitor photography, copy or logo is included.
 The site wordmark is live Cormorant Garamond type. The previous circular logo remains in the asset folder for archival/social use and is not used by the website.
 Cormorant Garamond and DM Sans are served locally; SIL Open Font Licences are included beside the font files.
+
+## Additional original Instagram photography — 23 November 2026
+
+Fetched from the public @bakedbyadeela posts at the user’s request. Full-resolution post images replace small profile previews; no generative sharpening or invented detail. Intentional shallow depth of field is preserved.
+
+- buttercream-detail.jpg (3024 × 4032): https://www.instagram.com/bakedbyadeela/p/DfxRyjfiIPi/
+- jewel-bouquet.jpg (1080 × 1350): https://www.instagram.com/bakedbyadeela/p/Dekhmr5iJ7n/
+- blush-duo.jpg (3024 × 4032): https://www.instagram.com/bakedbyadeela/p/DeeR-HADWOQ/
+- trailing-rose-wedding.jpg (1080 × 1440): https://www.instagram.com/bakedbyadeela/p/DeaBm-viMcJ/
+- cake.jpg (3072 × 4096): https://www.instagram.com/bakedbyadeela/p/DePSM6TIoAl/
+
+cake.jpg now uses the higher-resolution original of the same supplied fairy-garden cake. Static Instagram cards link to their individual source posts. Automatic feed updates still require the authorised connection documented in README.

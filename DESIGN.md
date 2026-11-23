@@ -156,3 +156,6 @@ Main navigation links use 19px bold (700) serif lettering; compact desktops use 
 
 ### Header Instagram link
 A 21px outlined Instagram SVG links to @bakedbyadeela beside the desktop enquiry action. At 1180px and below it stays visible beside the menu toggle; its duplicate inside the collapsed navigation is hidden. Accessible labels describe its destination and new tab behaviour.
+
+### Expanded portfolio and motion
+Four bouquet designs form a balanced 2 × 2 desktop gallery; three wedding designs share equal columns. Phones use one column. All Instagram portfolio frames use 3:4 proportions and link to source posts. Original high-resolution photography preserves the actual cake detail. Gallery cards enter once with a subtle 16px rise and short stagger; reduced-motion users see static cards, and content remains visible without JavaScript.
