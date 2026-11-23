@@ -193,6 +193,14 @@
       "phoneWidth": "clamp(190px,60vw,280px)",
       "color": "rose",
       "details": "Italic B/A initials, fine swashes, italic by and a small five-petal flower"
+    },
+    "navigationEmphasis": {
+      "fontSize": "19px",
+      "fontWeight": 700,
+      "compactDesktopFontSize": "17px",
+      "tabletMenuFontSize": "23px",
+      "phoneMenuFontSize": "22px",
+      "phoneMenuColumns": 1
     }
   },
   "components": [

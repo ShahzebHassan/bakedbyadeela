@@ -21,3 +21,9 @@
 .wordmark-lettering{font-family:var(--serif);font-weight:400}
 @media(min-width:1181px) and (max-width:1300px){.site-header .wordmark{width:300px}.header-inner{gap:24px}.nav{gap:17px}}
 @media(max-width:700px){.site-header .wordmark{width:clamp(190px,60vw,280px)}.header-inner{gap:15px}}
+
+/* Larger, stronger navigation labels. */
+.nav>a:not(.nav-contact){font-size:19px;font-weight:700}
+@media(min-width:1181px) and (max-width:1300px){.nav{gap:14px}.nav>a:not(.nav-contact){font-size:17px}}
+@media(max-width:1180px){.nav>a:not(.nav-contact){font-size:23px}}
+@media(max-width:700px){.nav{grid-template-columns:1fr}.nav>a:not(.nav-contact){font-size:22px;padding:11px 0}}
