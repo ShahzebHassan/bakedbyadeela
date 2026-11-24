@@ -35,7 +35,14 @@ def instagram():
 PAGES=[]
 def page(filename,title,desc,body,noindex=False):
     PAGES.append(filename)
-    nav=''.join(f'<a href="{url}"'+(' aria-current="page"' if url==filename else '')+f'>{label}</a>' for url,label in NAV)
+    submenus={'weddings.html':[('dome-bouquets','Dome bouquets'),('wedding-cakes','Wedding cakes'),('large-wedding-bouquets','Large wedding bouquets')],'bouquets.html':[('standard-bouquets','Standard bouquets'),('premium-bouquets','Premium bouquets'),('luxury-bouquets','Luxury bouquets')]}
+    nav=''
+    for url,label in NAV:
+        current=' aria-current="page"' if url==filename else ''
+        if url in submenus:
+            links=''.join(f'<a href="{url}#{slug}">{name}</a>' for slug,name in submenus[url])
+            nav+=f'<details class="nav-dropdown"><summary{current}>{label}<svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m4 6 4 4 4-4"/></svg></summary><div class="nav-submenu">{links}<a class="nav-view-all" href="{url}">View all {label.lower()}</a></div></details>'
+        else: nav+=f'<a href="{url}"{current}>{label}</a>'
     canonical='https://bakedbyadeela.netlify.app/'+('' if filename=='index.html' else filename)
     structured={'@context':'https://schema.org','@type':'Bakery','@id':'https://bakedbyadeela.netlify.app/#business','name':'Baked By Adeela','url':'https://bakedbyadeela.netlify.app/','description':'Floral cupcake bouquets, wedding and celebration cakes with hand-piped buttercream flowers in Birmingham and the Midlands.','image':'https://bakedbyadeela.netlify.app/assets/bouquet.jpg','areaServed':['Birmingham','West Midlands','Midlands'],'sameAs':[IG]}
     robots='<meta name="robots" content="noindex,follow">' if noindex else '<meta name="robots" content="index,follow">'

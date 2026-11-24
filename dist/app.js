@@ -1,8 +1,14 @@
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
-function closeMenu(){nav?.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');menuButton?.setAttribute('aria-label','Open navigation')}
+function closeMenu(){document.querySelectorAll('.nav-dropdown[open]').forEach(item=>item.open=false);nav?.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');menuButton?.setAttribute('aria-label','Open navigation')}
 menuButton?.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')!=='true';menuButton.setAttribute('aria-expanded',String(open));menuButton.setAttribute('aria-label',open?'Close navigation':'Open navigation');nav.classList.toggle('open',open)});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){closeMenu();menuButton.focus()}});
+document.addEventListener('keydown',e=>{
+ if(e.key!=='Escape')return;
+ const dropdown=e.target.closest('.nav-dropdown[open]');
+ if(dropdown){dropdown.open=false;dropdown.querySelector('summary').focus();return}
+ if(nav?.classList.contains('open')){closeMenu();menuButton.focus()}
+ else document.querySelectorAll('.nav-dropdown[open]').forEach(item=>item.open=false);
+});
 document.addEventListener('click',e=>{if(!e.target.closest('.site-header'))closeMenu()});
 matchMedia('(min-width:1181px)').addEventListener('change',e=>{if(e.matches)closeMenu()});
 document.querySelectorAll('.filter').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));let count=0;document.querySelectorAll('.flavour').forEach(item=>{item.hidden=button.dataset.filter!=='all'&&item.dataset.category!==button.dataset.filter;if(!item.hidden)count++});document.querySelector('#filter-status').textContent=`${count} flavour ideas shown`;}));
@@ -72,3 +78,24 @@ if(!motionPreference.matches && 'IntersectionObserver' in window){
     }
   });
 }
+
+
+// Native disclosures also work with keyboard and without JavaScript.
+const navDropdowns=[...document.querySelectorAll('.nav-dropdown')];
+navDropdowns.forEach(dropdown=>{
+ dropdown.addEventListener('toggle',()=>{
+  if(dropdown.open)navDropdowns.forEach(other=>{if(other!==dropdown)other.open=false});
+ });
+ dropdown.addEventListener('pointerenter',event=>{
+  if(event.pointerType==='mouse'&&matchMedia('(min-width:1181px)').matches)dropdown.open=true;
+ });
+ dropdown.addEventListener('pointerleave',event=>{
+  if(event.pointerType==='mouse'&&matchMedia('(min-width:1181px)').matches&&!dropdown.contains(document.activeElement))dropdown.open=false;
+ });
+ dropdown.addEventListener('focusout',()=>setTimeout(()=>{
+  if(!dropdown.contains(document.activeElement))dropdown.open=false;
+ },0));
+ dropdown.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  closeMenu();
+ }));
+});

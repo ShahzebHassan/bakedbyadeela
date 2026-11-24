@@ -162,3 +162,6 @@ Four bouquet designs form a balanced 2 × 2 desktop gallery; three wedding desig
 
 ### Named wedding and bouquet sections
 Weddings: Dome bouquets, Wedding cakes, Large wedding bouquets. Cupcake bouquets: Standard, Premium, Luxury, assigned by visible arrangement detail at the user’s request, without price or serving claims. Each group has a heading, gallery and direct enquiry action. Intro links and in-page collection navigation make all sections discoverable. All nine new photos use bright ivory background retouches. Matching 3:4 gallery frames retain a consistent rhythm; the five-item dome grid centres the last pair on desktop. Phones stack cards.
+
+### Collection navigation dropdowns
+Weddings and Cupcake bouquets use native details/summary disclosures with their three named section links and a view-all link. Desktop supports hover and click; mobile uses tap-to-expand. Escape closes the active disclosure and returns focus to its summary. Panels match ivory/blush tokens, and only one opens at a time. Mobile navigation scrolls within the viewport.
