@@ -18,3 +18,6 @@ Final recipes/flavour menu, prices, exact collection address, delivery policy an
 ## Deployment
 Public repository ShahzebHassan/bakedbyadeela. Production URL https://bakedbyadeela.netlify.app/.
 Python generates HTML into dist. CSS and JavaScript live in dist. Netlify build runs python build.py and publishes dist. Server function reads Instagram credentials only from the deployment environment.
+
+## 24 November collection update
+Client requested three Wedding sections (Dome bouquets, Wedding cakes, Large wedding bouquets) and three Cupcake bouquet sections (Standard, Premium, Luxury). Client authorised assigning designs by our judgement. Assignments are based on visible floral complexity, with no fixed price or portion claims. Client also requested brightness/background adjustments for nine supplied photographs; edited versions are kept separate from archived originals.

@@ -159,3 +159,6 @@ A 21px outlined Instagram SVG links to @bakedbyadeela beside the desktop enquiry
 
 ### Expanded portfolio and motion
 Four bouquet designs form a balanced 2 × 2 desktop gallery; three wedding designs share equal columns. Phones use one column. All Instagram portfolio frames use 3:4 proportions and link to source posts. Original high-resolution photography preserves the actual cake detail. Gallery cards enter once with a subtle 16px rise and short stagger; reduced-motion users see static cards, and content remains visible without JavaScript.
+
+### Named wedding and bouquet sections
+Weddings: Dome bouquets, Wedding cakes, Large wedding bouquets. Cupcake bouquets: Standard, Premium, Luxury, assigned by visible arrangement detail at the user’s request, without price or serving claims. Each group has a heading, gallery and direct enquiry action. Intro links and in-page collection navigation make all sections discoverable. All nine new photos use bright ivory background retouches. Matching 3:4 gallery frames retain a consistent rhythm; the five-item dome grid centres the last pair on desktop. Phones stack cards.
